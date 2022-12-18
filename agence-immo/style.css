@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* title */
+.title_main {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 100%;
+    padding: 15px;
+    background-color: rgb(4, 46, 92);
+    color: #fff;
+}
+
+.title_main span {
+    color: rgb(165, 70, 87);
+}
+
+hr {
+    width: 30%;
+    margin: 10px auto;
+}
+
+.title {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(4, 46, 92);
+}
+
+.title h2 {
+    padding: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.title .lieux {
+    letter-spacing: 3px;
+}
+
+.title .prix {
+    font-size: 25px;
+    color: #fff;
+}
+
+/* header */
+
+.img_header {
+    height: 60vh;
+    object-fit: cover;
+}
+
+img {
+    width: 100%;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.gallery img {
+    padding: 10px;
+    width: 20%;
+    filter: brightness(0.6);
+    transition: 0.2s;
+}
+
+.gallery img:hover {
+    transition: 0.3s;
+    transform: scale(1.05);
+    filter: none;
+    z-index: 1;
+}
+
+/* description */
+
+.desc h2 {
+    margin-top: 20px;
+    padding: 40px;
+    text-align: center;
+    font-size: 30px;
+    background-color: rgba(165, 70, 87, 0.6);
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.desc_home {
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 25px;
+}
+
+.desc_home li {
+    padding: 10px 0;
+    list-style-type: none;
+}
+
+.left_content {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    padding: 0 10px;
+    border: solid 5px;
+}
+
+.character_content {
+    text-align: right;
+}
+
+.right_content {
+    width: 70%;
+    margin: 0 15px;
+    padding: 10px;
+    border: solid 5px;
+}
+
+.right_content img {
+    width: 50%;
+}
+
+.table {
+    width: 100%;
+}
+
+.table .bar {
+    padding: 5px 15px;
+    margin:  10px 0;
+}
+
+.horizontale_A {
+    width: 20%;
+    background-color: #339a33;
+}
+
+.horizontale_B {
+    background-color: #33cc33;
+}
+
+.horizontale_C {
+    background-color: #cf3;
+}
+
+.horizontale_D {
+    background-color: #ff0;
+}
+
+.horizontale_E {
+    background-color: #fc0;
+}
+
+.horizontale_F {
+    background-color: #ff9a33;
+}
+
+.horizontale_G {
+    background-color: #ff0000;
+}
