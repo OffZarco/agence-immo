@@ -7,17 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Gabriel Immobilier</title>
 </head>
 
 <body>
+
+    <nav class="menu">
+        <h1 class="title_main">Gabriel Immobilier</h1>
+        <ul class="list">
+            <li><a href="">Accueil </a></li>
+            <li><a href="#catalogue">Catalogue</a></li>
+            <li><a href="#contact">Contact </a></li>
+        </ul>
+    </nav>
     <main>
-        <h1 class="title_main">Gabriel <span>Immobilier</span> <hr></h1>
-        <section class="title">
-            <h2 class="lieux">Alès</h2>
-            <h2 class="prix">582 000 €</h2>
-            <h2>217 m²</h2>
-        </section>
 
         <header class="image">
             <img class="img_header" src="./img/1.jpg" alt="">
@@ -29,50 +36,63 @@
             </div>
         </header>
 
+        <section class="title">
+            <h2 class="lieux">Alès</h2>
+            <h2 class="prix">582 000 €</h2>
+            <h2>217 m²</h2>
+        </section>
+
         <section class="desc">
             <h2>Description du bien</h2>
             <article class="desc_home">
-                <div class="left_content">
-                    <ul class="character">
-                        <li>Réf de l'annonce</li>
-                        <li>à rénover</li>
-                        <li>Garage/Paraking</li>
-                        <li>Terrasse/Balcon</li>
-                        <li>Jardin</li>
-                        <li>Piscine</li>
-                        <li>Nombre d'étage</li>
-                        <li>Meublé</li>
-                        <li>Nombre de chambre</li>
-                        <li>Nombre de salle de bain</li>
-                        <li>Nombre de W.C</li>
-                    </ul>
-                    <ul class="character_content">
-                        <li>########</li>
-                        <li>Non</li>
-                        <li>Garage</li>
-                        <li>Oui</li>
-                        <li>Oui</li>
-                        <li>Oui</li>
-                        <li>1</li>
-                        <li>Non</li>
-                        <li>4</li>
-                        <li>1</li>
-                        <li>1</li>
-                    </ul>
-                </div>
+                <ul class="character left_content">
+                    <li>
+                        <span>Réf de l'annonce</span>
+                        <span>########</span>
+                    </li>
+                    <li>
+                        <span>à rénover</span>
+                        <span>Non</span>
+                    </li>
+                    <li>
+                        <span>Garage/Paraking</span>
+                        <span>Garage</span>
+                    </li>
+                    <li>
+                        <span>Terrasse/Balcon</span>
+                        <span>Oui</span>
+                    </li>
+                    <li>
+                        <span>Jardin</span>
+                        <span>Oui</span>
+                    </li>
+                    <li>
+                        <span>Piscine</span>
+                        <span>Oui</span>
+                    </li>
+                    <li>
+                        <span>Meublé</span>
+                        <span>Non</span>
+                    </li>
+                    <li>
+                        <span>Nombre de chambre</span>
+                        <span>4</span>
+                    </li>
+                </ul>
 
                 <div class="right_content">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatibus maxime ullam! Sapiente,
                         illum ipsa? Soluta cumque sunt quod. Quae numquam nam amet harum ipsa dolore expedita nemo magni
                         tempore.
-                        Tenetur reprehenderit, accusamus repellat soluta nulla odio? Eos vel doloribus vero totam ab? Quos
+                        Tenetur reprehenderit, accusamus repellat soluta nulla odio? Eos vel doloribus vero totam ab?
+                        Quos
                         totam quas autem, minima amet error rerum! Sed aliquam porro dolore nisi nesciunt ducimus ipsam
-                        repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatibus maxime ullam! Sapiente,
+                        repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatibus maxime
+                        ullam! Sapiente,
                         illum ipsa? Soluta cumque sunt quod. Quae numquam nam amet harum ipsa dolore expedita nemo magni
                         tempore.
-                        Tenetur reprehenderit, accusamus repellat soluta nulla odio? Eos vel doloribus vero totam ab? Quos
-                        totam quas autem, minima amet error rerum! Sed aliquam porro dolore nisi nesciunt ducimus ipsam
-                        repellendus.
+                        Tenetur reprehenderit, accusamus repellat soluta nulla odio? Eos vel doloribus vero totam ab?
+                        Quos
                     </p>
                     <div class="table">
                         <div class="percentage">
@@ -121,31 +141,48 @@
             </article>
         </section>
 
-        <section class="anounce">
-            <div class="bloc_img">
-                <img src="./img/annonce-similaire1.jpg" alt="">
-                <h3>Annonce similaire 1</h3>
-            </div>
-            <div class="bloc_img">
-                <img src="./img/annonce-similaire2.jpg" alt="">
-                <h3>Annonce similaire 2</h3>
-            </div>
-            <div class="bloc_img">
-                <img src="./img/annonce-similaire3.jpg" alt="">
-                <h3>Annonce similaire 3</h3>
+        <section class="anounce" id="catalogue">
+            <h2>Annonces qui pourraient vous intéresser</h2>
+            <div class="anounce_bloc">
+                <div class="bloc_img">
+                    <img src="./img/annonce-similaire1.jpg" alt="">
+                    <a href="#">Annonce similaire 1 <i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+                <div class="bloc_img">
+                    <img src="./img/annonce-similaire2.jpg" alt="">
+                    <a href="#">Annonce similaire 2 <i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+                <div class="bloc_img">
+                    <img src="./img/annonce-similaire3.jpg" alt="">
+                    <a href="#">Annonce similaire 3 <i class="fa-solid fa-chevron-right"></i></a>
+                </div>
             </div>
         </section>
 
-        <section class="contact">
-            <h2>Contact</h2>
-            <form action="">
-                <input type="name" placeholder="Nom">
-                <input type="email" placeholder="E-mail">
-                <input type="phone" placeholder="Téléphone">
-                <textarea name="story" id="" cols="30" rows="10" placeholder="Bonjour, je souhaiterais en savoir plus sur ce bien. Merci !"></textarea>
-                <button>Envoyer</button>
-            </form>
-        </section>
+    </main>
+
+    <section class="contact" id="contact">
+        <h2>Contact</h2>
+        <form action="#">
+            <label for="fname"></label>
+            <input id="fname" type="text" name="fname" placeholder="Nom">
+            <label for="email"></label>
+            <input id="email" type="text" name="email" placeholder="E-mail">
+            <label for="tel"></label>
+            <textarea name="text" id="tel" cols="30" rows="10" placeholder="Bonjour, je souhaiterais en savoir plus sur ce bien. 
+Merci !"></textarea>
+            <input class="button" type="submit" value="Envoyer">
+        </form>
+    </section>
+
+    <footer class="footer_main">
+        <article>
+            <a target="_blank" href="https://fr-fr.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            <a target="_blank" href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+            <a target="_blank" href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+        </article>
+        <h2>© COPYRIGHT 2022 - Tous Droits Réservés</h2>
+    </footer>
 
     </main>
 </body>
